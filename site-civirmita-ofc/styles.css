@@ -2,7 +2,7 @@
 /*Geral*/ 
 *{ 
     margin: 0; 
-    padding: 10%; 
+    padding: 0; 
     box-sizing: border-box; /*Manter tudo na caixa*/ 
     /*Google fonts*/ 
     font-family: 'Poppins', sans-serif; 
@@ -14,6 +14,7 @@ body{
     height: 100vh; /*Altura*/ 
     display:flex;
     justify-content:center;
+    aling-items:center;
     
    
     
