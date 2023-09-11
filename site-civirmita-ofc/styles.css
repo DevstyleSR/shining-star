@@ -493,3 +493,32 @@ footer .btn-social button{
     width: 33px;
     height: 33px;
 }
+
+@media (max-width:390px) {
+    .img-sobre, .membros.jpg{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 0.7;
+              
+    }
+}
+@media (max-width:375px) {
+    .img-sobre, .membros.jpg{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 0.6;
+              
+    }
+}
+@media (max-width:360px) {
+    .img-sobre, .membros.jpg{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 0.55;
+              
+    }
+}
+
