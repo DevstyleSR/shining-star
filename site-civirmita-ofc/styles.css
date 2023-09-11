@@ -480,8 +480,9 @@ footer .btn-social button{
         background-color: #446EAC;     
         width: 100%;  
         max-width: 360px; 
-        margin: 0 auto; 
-        height: 400px; 
+        margin: 5%; 
+        height: 400px;
+        margin-bottom: 5%; 
     } 
 }
 #favicon{
