@@ -38,7 +38,10 @@ body{
     border-radius: 30px; /*Borda arredondada do botão*/ 
     cursor: pointer; 
     transition: 0.2s; 
-} 
+}
+.img-topo-site{
+    z-index: -1;
+}
  
 h2.titulo{ 
     color: #fff; 
