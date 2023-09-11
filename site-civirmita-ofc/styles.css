@@ -494,7 +494,7 @@ footer .btn-social button{
     height: 33px;
 }
 
-@media (max-width:390px) {
+@media (max-width:650px) {
     .img-sobre, .membros.jpg{ 
         display: flex;
         align-items: center;
@@ -503,12 +503,39 @@ footer .btn-social button{
               
     }
 }
-@media (max-width:375px) {
+@media (max-width:428px) {
+    .img-sobre, .membros.jpg{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 0.7;
+              
+    }
+}
+@media (max-width:414px) {
+    .img-sobre, .membros.jpg{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 0.63;
+              
+    }
+}
+@media (max-width:393px) {
     .img-sobre, .membros.jpg{ 
         display: flex;
         align-items: center;
         justify-content: center;
         scale: 0.6;
+              
+    }
+}
+@media (max-width:375px) {
+    .img-sobre, .membros.jpg{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 0.55;
               
     }
 }
@@ -521,4 +548,5 @@ footer .btn-social button{
               
     }
 }
+
 
