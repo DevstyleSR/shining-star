@@ -503,7 +503,7 @@ footer .btn-social button{
               
     }
 }
-@media (max-width:428px) {
+@media (max-width:528px) {
     .img-sobre, .membros.jpg{ 
         display: flex;
         align-items: center;
