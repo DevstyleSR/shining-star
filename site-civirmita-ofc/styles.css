@@ -12,9 +12,7 @@
 body{ 
     background-color: black; 
     height: 100vh; /*Altura*/ 
-    display:flex;
-    justify-content:center;
-    aling-items:center;
+    
     
    
     
