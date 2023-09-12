@@ -1,4 +1,4 @@
-window.addEventListener("onload",()=>{alerta("Bem Vindo(a) ao Nosso site")}
+window.addEventListener("onload",()=>{alert("Bem Vindo(a) ao Nosso site")}
 
 function alerta(){
   alert("Desculpe, está em manutenção no momento.")
