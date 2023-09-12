@@ -380,6 +380,7 @@ footer .btn-social button{
         
         
         
+        
     } 
  
     h2.titulo{ 
@@ -388,7 +389,7 @@ footer .btn-social button{
  
     /*Cabeçalho*/ 
     .menu-desktop, .btn-contato{ 
-        display: none; 
+       
     } 
     /*Topo do site*/ 
     section.topo-do-site{ 
@@ -531,7 +532,7 @@ footer .btn-social button{
         display: flex;
         align-items: center;
         justify-content: center;
-        scale: 0.7;
+        scale: 0.65;
               
     }
 }
@@ -570,4 +571,31 @@ footer .btn-social button{
         scale: 0.55;
               
     }
+}
+
+@media (max-width: 1020px) {
+     
+    /*Estilo do cabeçalho*/ 
+     
+    header > .interface{ 
+        display:inline; 
+        align-items:center;
+        text-align: center;
+         font-size: small;
+         position: relative;
+    }
+    #bnt-contato button{
+        display: flex;
+        scale: 0.8;
+    }
+    .menu-desktop{
+        
+        width: 100%;
+    } 
+     
+    header nav ul li{ 
+        display: inline-block;
+        padding: 2%; /*Distancia dos menus*/ 
+    } 
+
 }
