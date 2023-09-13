@@ -1,4 +1,4 @@
-
+ 
 <!DOCTYPE html> 
 <html lang="pt-br"> <!--Idioma--> 
 <head> 
@@ -20,7 +20,16 @@
     <title>Civirmita Jr.</title> 
 </head> 
 <body> 
-     
+    <cap>
+        <div class="cap-flex">
+            <ul>
+                <h2><span id="Data">00:00:00</span></h2>
+            </ul>
+            <ul>
+                <h2><span id="clock">00:00:00</span></h2>
+            </ul>
+        </div>
+    </cap>
     <header> 
         <div class="interface"> 
             <div class="logo"> 
@@ -86,7 +95,7 @@ fale conosco-->
          
         <section class="espcialidades"> 
             <div class="interface"> 
-                <h2 class="titulo">CIVIRMITA JR.|<Span>2023</Span></h2> 
+                <h2 class="titulo">CIVIRMITA JR.|<Span id="ano">2023</Span></h2> 
                 <div class="flex"> 
                     <div class="box"> 
                         <i class="bi bi-trophy"></i> 
@@ -135,7 +144,7 @@ importantes para um bom projeto. A firmitas garante que o seu projeto
 seja estável, “construível” e operável. O perfil no Instagram é: 
 civirmitajr.</P> 
                         <div class="btn-social"> 
-                            <a href="https://instagram.com/civirmitajr?igshid=MzRlODBiNWFlZA=="><button><i class="bi bi-instagram"></i></button></a> <!--Instagram--> 
+                            <a href="https://instagram.com/civirmitajr?igshid=MzRlODBiNWFlZA== "><button><i class="bi bi-instagram"></i></button></a> <!--Instagram--> 
                             <a ><button onclick="alertar()"><i class="bi bi-whatsapp"></i></button></a> <!--Whats--> 
                             
                             <a href="mailto:presidente.civirmita@uemasul.edu.br"><button><i class="bi bi-envelope"></i></button></a> <!--E-mail--> 
@@ -173,9 +182,9 @@ url(portfolio.png);">
                 <form action=""> 
                     <input type="text" name="" id="" placeholder="Nome:" 
 required> 
-                    <input type="text" name="" id="" placeholder="E
+                    <input type="email" name="" id="" placeholder="E
 mail:" required> 
-                    <input type="text" name="" id="" 
+                    <input type="number" name="" id="" 
 placeholder="Celular:"> 
                     <textarea name="" id="" placeholder="Sua mensagem:" 
 required></textarea> 
@@ -208,10 +217,22 @@ href="mailto:presidente.civirmita@uemasul.edu.br">presidente.civirmita@ue
 </body> 
 </html> 
 <script>
-  function alertar(){
-   alert("Desculpe, está em manutenção no momento 🙃.")
-}
-</script>
+    
+    
+    setInterval(()=>{
+        document.getElementById("clock").textContent = new Date().toLocaleTimeString("br");
+        
+        const dataatual = Date.now();
+        const today = new Date(dataatual);
+        document.getElementById("Data").textContent=today.toLocaleDateString();
+        document.getElementById("ano").textContent=today.getFullYear();
+    }
+    )
+
+    function alertar(){
+        alert("Desculpe, está em manutenção no momento.")
+    }
+</script> 
  
 <!--
 

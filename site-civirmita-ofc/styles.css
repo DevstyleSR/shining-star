@@ -14,7 +14,39 @@ body{
     height: 100%;
     background-color: black; 
     height: 100vh; /*Altura*/ 
-} 
+    user-select: none;
+}
+/*rodape inicial*/
+cap{
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    
+    
+}
+cap .cap-flex{
+    background-color: #446EAC;
+    display: flex;
+    justify-content:space-between;
+    padding:1% 2% 1% ;
+    
+
+}
+cap .cap-flex ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: 5c5c5c;
+    width: auto;
+    height: 10px;
+}
+#clock,#Data{
+    font-size: 20px;
+    font-family: poppin;
+}
+/*rodape inicial*/
  
 .interface{ 
     max-width: 1280px; /*Largura maxima*/ 
@@ -58,7 +90,8 @@ button:hover, form .btn-enviar input:hover{
  
 /*Estilo do cabeçalho*/ 
 header{ 
-    padding: 40px 4%; /*Distância da tela*/ 
+    padding: 44px 4%; /*Distância da tela*/
+    
 } 
  
 header > .interface{ 
@@ -572,6 +605,14 @@ footer .btn-social button{
               
     }
 }
+@media (max-width:320px) {
+    .img-sobre, .membros.jpg{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 0.50;        
+    }
+}
 
 @media (max-width: 1020px) {
      
@@ -591,11 +632,26 @@ footer .btn-social button{
     .menu-desktop{
         
         width: 100%;
+        font-size: 15px;
+        font-weight: 800;
+        user-select: none;
     } 
      
     header nav ul li{ 
         display: inline-block;
         padding: 2%; /*Distancia dos menus*/ 
+    }
+    header{ 
+        padding: 80px 4%; /*Distância da tela*/
+        
     } 
+    cap .cap-flex ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background: 5c5c5c;
+        width: auto;
+        height: 30px; 
 
 }
