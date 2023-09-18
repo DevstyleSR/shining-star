@@ -1,109 +1,201 @@
-*{ 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; /*Manter tudo na caixa*/ 
-    /*Google fonts*/ 
-    font-family: 'Poppins', sans-serif;
-    /*Google fonts*/ 
-}
+.text-inicial{
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 8% 8%;
+    gap: 60px;
 
-body{
+}
+.titulo{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 4%;
+   font-size: 18px;
+}
+.text-inicial ul{
+}
+.diretorias{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0% 2.5% 8%;
+}
+.diretorias ul{
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    height: 100%;
-    background-color: black; 
-    height: 100vh; /*Altura*/ 
-}
- 
-.interface{ 
-    margin: 0 auto; 
-} 
- 
-.flex{ 
-    display: flex; 
-} 
- 
-.btn-contato button{ 
-    position: 10px 40px; /*posição do botão*/ 
-    padding: 5px; 
-    font-size: 18px; /*Tamanho da fonte*/ 
-    font-weight: 700; 
-    background-color: #446EAC; /*Cor do botão de contato*/ 
-    color: #fff; 
-    border: 0; 
-    border-radius: 30px; /*Borda arredondada do botão*/ 
-    cursor: pointer; 
-    transition: 0.2s; 
-}
-.img-topo-site{
-    z-index: -1;
-}
- 
-h2.titulo{ 
-    color: #fff; 
-    font-size: 34px; 
-    text-align: center; /*Centralizar texto*/ 
-} 
-h2.titulo span{ 
-    color: #446EAC; 
     
-} 
- 
-button:hover, form .btn-enviar input:hover{ 
-    box-shadow: 0px 0px 8px #446EAC; 
-    transform: scale(1.06); 
-} 
- 
-/*Estilo do cabeçalho*/ 
-header{ 
-    padding: 40px 4%; /*Distância da tela*/ 
-} 
- 
-header > .interface{ 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-} 
- 
-header a{ 
-    color: #5c5c5c; 
-    text-decoration: none; 
-    display: inline-block; 
-    transition: .2s; 
-} 
- 
-header a:hover{ 
-    color: #fff; 
-    transform: scale(1.06); 
-} 
- 
-header nav ul{ 
-    list-style-type: none; 
-} 
- 
-header nav ul li{ 
-    display: inline-block; 
-    padding: 0 40px; /*Distancia dos menus*/ 
-} 
-@media (max-width: 800px) {
-    header > .interface{ 
-        display:inline; 
-        align-items:center;
-        text-align: center;
-         font-size: small;
-         position: relative;
-    }
-    #bnt-contato button{
-        display: flex;
-        scale: 0.8;
-    }
-    .menu-desktop{
-        
-        width: 100%;
-    } 
-     
-    header nav ul li{ 
-        display: inline-block;
-        padding: 2%; /*Distancia dos menus*/ 
-    } 
+    
+}
+.diretorias-box{
+    background-color: #446EAC;
+    height: 390px;
+    width: 390px;
+    border-radius:50px;
+    transition: .9s;
+    background-repeat: space;
+    background-position: center; 
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    filter: contrast(120%);
+    
+}
+.diretorias-box h1{
+    height: 50%;
+    color: #446EAC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    text-shadow: 
+    -1px -1px 5px black, 
+    -1px 1px 5px black,                    
+     1px -1px 5px black,                  
+     1px 0px 5px black,
+     0px 0px 5px #446EAC;
 
+    
+  
+}
+#projetos{
+    background-image: url(larissa.jpg);
+    background-size: 155%;
+    background-position: top center;
+}
+#projetos:hover{
+    background-size: 230%;
+    background-position: top -50px left -80px;
+}
+#presidencia{
+    background-image: url(lorrany3.png);
+    background-position: top;
+    background-size: 100%;
+   
+}
+#presidencia:hover{
+    background-size: 180% ;
+    background-position:  top -40px left;
+}
+#gestao{
+    background-image: url(amailson.jpg);
+    background-position: top;
+}
+#gestao:hover{
+    background-size: 175%;
+    background-position:  top -80px left 0px;
+}
+#market{
+    margin-left: 15%;
+    background-image: url(lara.jpg);
+}
+#market:hover{
+    background-size: 155%;
+    background-position: center -20px left;
+}
+#financeiro{
+    background-image: url(paulo.jpg);
+    margin-right: 15%;
+    background-position: top -50px left -160px;
+    background-size: 240%;
+}
+#financeiro:hover{
+    background-size:250%;
+    background-position: top -30px left -50px;
+}
+.diretorias-box:hover{
+    scale: 1.01;
+    box-shadow: 0px 0px 8px #446EAC;
+    background-position: center left;
+    .saiba-mais button{
+        display: block;
+        animation: btnani 1s ease-in-out;
+        margin-bottom: 15%;
+    }
+    .btn-sm{
+        display: block;
+        animation: btnsm 1s ease-in-out;
+    }
+    .diretorias-box h1{
+        display: none;
+      
+    }
+    
+}
+
+.social-midia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.social-midia .btn-sm{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: #446EAC;
+    display: none;
+}
+@keyframes btnsm{
+    from{
+        scale: 0.1;
+    }
+    to{
+        scale: 1;
+    }
+}
+.saiba-mais{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.saiba-mais button{
+    height: 40px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #446EAC ;
+    margin-bottom: 4%;
+    display: none;
+    transition: .2s;
+}
+@keyframes btnani{
+    from{
+        scale: 0.1;
+    }
+    to{
+        scale: 1;
+    }
+}
+
+.pos-sobre{
+    height: 500px;
+    width: 100%;
+    display: block;
+}
+
+@media (max-width:1020px) {
+    .titulo{
+        margin-bottom: 5%;
+    }
+    .diretorias{
+        margin: 0;
+    }
+    .diretorias ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .diretorias-box{
+        margin-bottom: 10%;
+        width: 350px;
+        height: 350px;
+    }
+    #market{
+        margin-left: 0;
+    }
+    #financeiro{
+        margin-right: 0;
+    }
 }
