@@ -138,6 +138,13 @@ financeiro:hover{
     border-radius: 100px;
     background-color: #446EAC;
     display: none;
+    box-shadow: 0px 0px 40px #446EAC;
+}
+.btn-sm:hover{
+    scale: 1.1;
+    transition: 0.2s;
+    box-shadow: 0px 0px 8px;
+
 }
 @keyframes btnsm{
     from{
@@ -183,6 +190,8 @@ financeiro:hover{
     }
     .diretorias{
         margin: 0;
+        
+
     }
     .diretorias ul{
         flex-direction: column;
