@@ -12,7 +12,8 @@
    margin-bottom: 4%;
    font-size: 18px;
 }
-.text-inicial ul{
+.text-inicial span{
+    color: #446EAC;
 }
 .diretorias{
     display: flex;
@@ -63,7 +64,7 @@
     background-size: 155%;
     background-position: top center;
 }
-#projetos:hover{
+projetos:hover{
     background-size: 230%;
     background-position: top -50px left -80px;
 }
@@ -73,7 +74,7 @@
     background-size: 100%;
    
 }
-#presidencia:hover{
+presidencia:hover{
     background-size: 180% ;
     background-position:  top -40px left;
 }
@@ -81,7 +82,7 @@
     background-image: url(amailson.jpg);
     background-position: top;
 }
-#gestao:hover{
+gestao:hover{
     background-size: 175%;
     background-position:  top -80px left 0px;
 }
@@ -89,7 +90,7 @@
     margin-left: 15%;
     background-image: url(lara.jpg);
 }
-#market:hover{
+market:hover{
     background-size: 155%;
     background-position: center -20px left;
 }
@@ -99,13 +100,13 @@
     background-position: top -50px left -160px;
     background-size: 240%;
 }
-#financeiro:hover{
+financeiro:hover{
     background-size:250%;
     background-position: top -30px left -50px;
 }
 .diretorias-box:hover{
     scale: 1.01;
-    box-shadow: 0px 0px 8px #446EAC;
+    box-shadow: 0px 0px 20px #446EAC;
     background-position: center left;
     .saiba-mais button{
         display: block;
@@ -159,6 +160,7 @@
     margin-bottom: 4%;
     display: none;
     transition: .2s;
+    box-shadow: 0px 0px 40px #446EAC;
 }
 @keyframes btnani{
     from{
