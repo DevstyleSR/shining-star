@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
     <!--icones--> 
     <link rel="stylesheet" href="styles.css">
-    <link rel="javascript" href="script.js">
+    <script src="script.js"></script>
     <!--favicon-->
     <link rel="shortcut icon" href="novoico.ico" type="image/x-icon">
     <title>Civirmita Jr.</title> 
@@ -215,23 +215,7 @@ href="mailto:presidente.civirmita@uemasul.edu.br">presidente.civirmita@uemasul.e
  
 </body> 
 </html> 
-<script>
-    
-    
-    setInterval(()=>{
-        document.getElementById("clock").textContent = new Date().toLocaleTimeString("br");
-        
-        const dataatual = Date.now();
-        const today = new Date(dataatual);
-        document.getElementById("Data").textContent=today.toLocaleDateString();
-        document.getElementById("ano").textContent=today.getFullYear();
-    }
-    )
 
-    function alertar(){
-        alert("Desculpe, está em manutenção no momento.")
-    }
-</script> 
  
 <!--
 

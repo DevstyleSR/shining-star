@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civirmita Jr. | Orçamento </title>
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="orcamento.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="novoico.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <cap>
+        <div class="cap-flex">
+            <ul>
+                <h2><span id="Data">00:00:00</span></h2>
+            </ul>
+            <ul>
+                <h2><span id="clock">00:00:00</span></h2>
+            </ul>
+        </div>
+    </cap>
+    <header> 
+        <div class="interface"> 
+            <div class="logo"> 
+                <a href="#"> 
+                    <img src="logo.png" alt="logo da empresa"> 
+                </a> 
+            </div> <!--Logo--> 
+            <nav class="menu-desktop"> 
+                <ul> 
+                    <li> 
+                        <a href="index.html">Inicio</a> 
+                    </li> 
+                    <li> 
+                        <a href="sobre.html">Sobre</a> 
+                    </li> 
+                    <li> 
+                        <a href="#">Projetos</a> 
+                    </li>
+                    <li>
+                        <div id="bnt-contato" class="btn-contato"> 
+                            <a href="#"> 
+                                <button>contato</button> <!--Botão de contato--> 
+                            </a> 
+                        </div> <!--btn-contato--> 
+                    </li>
+                </ul> 
+            </nav> 
+           
+        </div> <!--Interface--> 
+    </header>
+    
+    <div class="text-inicial">
+        <div class="titulo">
+            <ul>
+                <h1>ORÇAMENTO <SPAN>CIVIRMITA</SPAN></h1>
+            </ul>
+        </div>
+    </div>
+    <div class="box_img">
+
+        <div class="orcamento_box">
+        <div class="conteudoani">
+
+            <div class="tipo_de_projeto">
+                <h2>Escolha um tipo de projeto:</h2>
+            </div>
+            <div class="calculadora_box">
+            
+
+            
+                <ul>
+                    <input type="radio" name="radio" class="radio"  value="arquitetonico">
+                    <label for=""> Projeto Arquitetônico</label>
+                </ul>
+                <ul>
+                    <input type="radio" name="radio" class="radio" id="radio"  value="eletrico">
+                    <label for="radio"> Projeto Eletrico</label>
+                </ul>
+                <ul>
+                    <input type="radio" name="radio" class="radio"  value="estrutural">
+                    <label for=""> Projeto Estrutural</label>
+                </ul>
+                <ul>
+                    <input type="radio" name="radio" class="radio"  value="hidrossanitario">
+                    <label for=""> Projeto Hidrossanitário</label>
+                </ul>
+                <ul>
+                    <input type="radio" name="radio" class="radio"  value="fundacao">
+                    <label for=""> Projeto de Fundação</label>
+                </ul>
+            </div>
+            <div class="tipo_de_projeto">
+                <h2>Escolha um modelo para o projeto:</h2>
+            </div>
+            <div class="calculadora_box">
+                <ul>
+                    <input type="radio" name="radio1" class="radio2" checked value="simples">
+                    <label for=""> Projeto Simples</label>
+                </ul>
+                <ul>
+                    <input type="radio" name="radio1" class="radio2" id="radio"  value="intermediario">
+                    <label for="radio"> Projeto Intermediário</label>
+                </ul>
+                <ul>
+                    <input type="radio" name="radio1" class="radio2"  value="sofisticado">
+                    <label for=""> Projeto Sofisticado</label>
+                </ul>
+            </div>
+            <div class="tipo_de_projeto">
+                <h2>Informe a area a ser construida:</h2>
+            </div>
+            <div class="calculadora_box">
+                <ul>
+                    <input class="area" id="area" type="number" placeholder="Area em metros quadrados" >
+                    
+                </ul>
+                <button onclick="realizarorcamento()" id="button">Realizar orçamento</button>
+                
+            </div>
+        </div>
+        <div class="conteudoani2" id="conteudoani2">
+            <div class="titulo_seuorcamento">
+                <ul>
+                    <h2>Seu Orçamento</h2>
+                </ul>
+            </div>
+            <div class="content_seuorcamento">
+                <ul>
+                    <label for="">Tipo de Projeto: <span class="tipo_de_projeto_span"></span></label>
+                    <br>
+                    <label for="">Modelo de Projeto: <span class="modelo_de_projeto_span"></span></label>
+                    <br>
+                    <label for="">Area do Projeto: <span class="area_do_projeto_span"></span></label>
+                    <br>
+                    <label for="">Investimento calculado para o seu projeto: <span id="span" class="Investimento_span"></span></label>
+
+                </ul>
+                <ul class="seuorcamento_button">
+                    <button id="button" onclick="novoorcamento()">Novo orçamento</button>
+                    <button id="button" class="contratarbtn">contratar</button>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+    <footer> 
+        <div class="interface"> 
+            <div class="line"> 
+                <div class="flex"> 
+                    <div class="logo"> 
+                        <img src="logo.png"> 
+                        <img src="uemasul.png"> 
+                    </div> 
+                </div> <!--Flex--> 
+            <div class="line borda"> 
+                <p><i class="bi bi-envelope-fill"></i><a 
+href="mailto:presidente.civirmita@uemasul.edu.br">presidente.civirmita@uemasul.edu.br</a></p> 
+            </div> 
+            </div> 
+        </div> <!---Interface--> 
+    </footer> <!--Rodape--> 
+</body>
+</html>
+

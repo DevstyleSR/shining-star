@@ -2,10 +2,14 @@
     color: #fff;
     font-size: 20px;
     text-align: justify;
-    padding: 0px 8% 8%;
+    padding: 0px 4% 8%;
     gap: 60px;
 
 }
+.text-inicial p {
+    margin: 40px 0%;
+}
+
 .titulo{
    display: flex;
    justify-content: center;
@@ -29,7 +33,7 @@
     
 }
 .diretorias-box{
-    background-color: transparent;
+    background:transparent;
     height: 390px;
     width: 390px;
     border-radius:50px;
@@ -179,7 +183,7 @@ financeiro:hover{
 }
 
 .pos-sobre{
-    height: 500px;
+    height: 50px;
     width: 100%;
     display: block;
 }
@@ -187,6 +191,10 @@ financeiro:hover{
 @media (max-width:1020px) {
     .titulo{
         margin-bottom: 5%;
+    }
+    .text-inicial{
+        padding: 0px 8% 8%;
+    
     }
     .diretorias{
         margin: 0;
