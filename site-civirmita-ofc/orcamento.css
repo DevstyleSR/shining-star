@@ -70,7 +70,7 @@ body{
 }
 .calculadora_box label {
     margin: 8px;
-    font-size: ;
+    
 }
 .area {
     height: 50px;
@@ -173,9 +173,49 @@ body{
     color: chartreuse;
 }
 
-.conteudoani2{
+.conteudoani2,.conteudoani{
     display: none;
 }
+.conteudoani0{
+    margin: 4%;
+}
+.conteudoani0 ul{
+    margin: 6%;
+    
+    font-size: 14pt;
+}
+.conteudoani0 ul > ul{
+    background-color: #446eac63;
+    padding: 8px;
+    padding-left: 4%;
+    border-radius: 40px;
+    transition: .5s;
+}
+.conteudoani0 ul > ul:hover{
+    background-color: #5490e9;
+    scale: 1.05;
+    box-shadow: 0 0 8px #446EAC;
+   
+}
+
+li{
+    list-style: disc;
+}
+li::marker{
+    color: #0548ad;
+    
+}
+/*li:before{
+    content: "\2022";
+    color: #0665f3;
+    margin: 5px;
+    font-size: larger;  
+}*/
+
+.conteudoani{
+    padding: 5%;
+}
+
 .seuorcamento_button{
     display: flex;
     justify-content: space-around;
@@ -222,7 +262,7 @@ body{
         
     }
     .orcamento_box{
-        height: 720px;
+        height: 600px;
         padding-top: 2%;
         padding-right: 4%;
         
@@ -255,5 +295,16 @@ body{
         background-repeat: no-repeat;
         background-position: center top 150px;
         position: relative;
+    }
+    .conteudoani0 ul{
+        margin: 6%;
+        
+        font-size: 15pt;
+    }
+    .conteudoani0 ul > ul{
+        padding: 8px;
+        padding-left: 15%;
+        padding-right: 8%;
+        border-radius: 20px;
     }
 }

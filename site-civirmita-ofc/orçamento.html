@@ -64,6 +64,24 @@
     <div class="box_img">
 
         <div class="orcamento_box">
+            <div class="conteudoani0">
+                <h2>Escolha uma area de orçamento abaixo: </h2>
+                <ul>
+                    <ul onclick="orcamento1()"><li>Residência unifamiliar.</li></ul>
+                    <ul onclick="orcamento2()"><li>Pequenas empresas, escolas, lojas, restaurantes, lanchonetes e afins.</li></ul>
+                    <ul onclick="orcamento3()"><li>Habitação coletiva, shoppings, edificios garagens e afins.</li></ul>
+                </ul>
+                
+
+
+
+            </div>
+
+
+
+
+
+
         <div class="conteudoani">
 
             <div class="tipo_de_projeto">
@@ -83,24 +101,24 @@
                 </ul>
                 <ul>
                     <input type="radio" name="radio" class="radio"  value="estrutural">
-                    <label for=""> Projeto Estrutural</label>
+                    <label for=""> Projeto Estrutural completo</label>
                 </ul>
                 <ul>
-                    <input type="radio" name="radio" class="radio"  value="hidrossanitario">
-                    <label for=""> Projeto Hidrossanitário</label>
+                    <input type="radio" name="radio" class="radio"  value="esgoto">
+                    <label for=""> Projeto de Esgoto</label>
                 </ul>
-                <ul>
+                <!--<ul>
                     <input type="radio" name="radio" class="radio"  value="fundacao">
                     <label for=""> Projeto de Fundação</label>
-                </ul>
+                </ul>!-->
             </div>
-            <div class="tipo_de_projeto">
+           <!--- <div class="tipo_de_projeto">
                 <h2>Escolha um modelo para o projeto:</h2>
             </div>
             <div class="calculadora_box">
                 <ul>
                     <input type="radio" name="radio1" class="radio2" checked value="simples">
-                    <label for=""> Projeto Simples</label>
+                    <label for=""> <span class="modelo1">Projeto Simples</span></label>
                 </ul>
                 <ul>
                     <input type="radio" name="radio1" class="radio2" id="radio"  value="intermediario">
@@ -110,7 +128,7 @@
                     <input type="radio" name="radio1" class="radio2"  value="sofisticado">
                     <label for=""> Projeto Sofisticado</label>
                 </ul>
-            </div>
+            </div>-->
             <div class="tipo_de_projeto">
                 <h2>Informe a area a ser construida:</h2>
             </div>
@@ -119,7 +137,7 @@
                     <input class="area" id="area" type="number" placeholder="Area em metros quadrados" >
                     
                 </ul>
-                <button onclick="realizarorcamento()" id="button">Realizar orçamento</button>
+                <button onclick="realizarorcamento1()" id="button">Realizar orçamento</button>
                 
             </div>
         </div>
@@ -132,8 +150,9 @@
             <div class="content_seuorcamento">
                 <ul>
                     <label for="">Tipo de Projeto: <span class="tipo_de_projeto_span"></span></label>
-                    <br>
+                     <!--<br>
                     <label for="">Modelo de Projeto: <span class="modelo_de_projeto_span"></span></label>
+                    <br>-->
                     <br>
                     <label for="">Area do Projeto: <span class="area_do_projeto_span"></span></label>
                     <br>
