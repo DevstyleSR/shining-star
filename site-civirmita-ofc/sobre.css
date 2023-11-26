@@ -118,8 +118,24 @@ financeiro:hover{
         margin-bottom: 15%;
     }
     .btn-sm{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         animation: btnsm 1s ease-in-out;
+        background-image: url(whatsapp.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: center;
+        
+    }
+    .btn-sm:nth-child(2){
+        background-image: url(socialicos/o-email.png);
+
+    }
+    .btn-sm:nth-child(3){
+        background-image: url(socialicos/linkedin.png);
+        background-size: 80%;
+
     }
     .diretorias-box h1{
         display: none;
@@ -135,6 +151,7 @@ financeiro:hover{
     height: 80%;
     margin-left: 4%;
     margin-top: 2%;
+    
 }
 .social-midia .btn-sm{
     height: 50px;
@@ -172,6 +189,9 @@ financeiro:hover{
     display: none;
     transition: .2s;
     box-shadow: 0px 0px 40px #446EAC;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
 }
 @keyframes btnani{
     from{
