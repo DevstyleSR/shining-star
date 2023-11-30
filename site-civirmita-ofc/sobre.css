@@ -3,7 +3,7 @@
     font-size: 20px;
     text-align: justify;
     padding: 0px 4% 8%;
-    gap: 60px;
+    gap: 90px;
 
 }
 .text-inicial p {
@@ -14,7 +14,8 @@
    display: flex;
    justify-content: center;
    margin-bottom: 4%;
-   font-size: 18px;
+   font-size: 28px;
+   margin-top: 30px;
 }
 .text-inicial span{
     color: #446EAC;
@@ -211,6 +212,7 @@ financeiro:hover{
 @media (max-width:1020px) {
     .titulo{
         margin-bottom: 5%;
+        font-size: 15px;
     }
     .text-inicial{
         padding: 0px 8% 8%;

@@ -8,6 +8,53 @@
     font-family: 'Poppins', sans-serif;
     /*Google fonts*/ 
 } 
+header{
+    /*background: linear-gradient(#010305,#111f33 ,#132541);*/
+    background-image: url(The\ Best\ Vector\ City\ Silhouettes_\ Set\ Stock\ Vector\ -\ Illustration\ of\ black\,\ silhouettes_\ 22372189.jpeg);
+    background-position: center top 37px;
+    background-size: 100% 220%;
+    width: 100vw;
+    height: 300px;
+    
+}
+@media (min-width:1020px) {
+    header ul li{
+        transform: translateY(-30px);
+        
+    }
+    header .logo{
+        transform: translate(10%,20%);
+    }
+}
+@media (max-width:1020px) {
+    header .logo{
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(2%,2%);
+        margin-bottom: 40px;
+    }
+    header{
+        height: 350px;
+        margin-bottom: 45px;
+        background-position:center top 30px;
+        background-size: 120% 220%;
+    }
+    
+}
+
+header .logo{
+    border-radius: 100px;
+    background-color: #010305;
+    overflow: hidden;
+    padding: 10px;
+    
+    
+    
+}
  
 body{
     width: 100%;
@@ -99,9 +146,17 @@ header > .interface{
     align-items: center; 
     justify-content: space-between; 
 } 
- 
+header ul li:not(:last-child){
+    font-weight: 800;
+    /*background-color: rgba(92, 92, 92, 0.473);*/
+    background-color: #0765f39f;
+    border-radius: 50px;
+}
+
+
 header a{ 
-    color: #5c5c5c; 
+    /*color: #5c5c5c;*/
+    color: #1b1b1b;
     text-decoration: none; 
     display: inline-block; 
     transition: .2s; 
