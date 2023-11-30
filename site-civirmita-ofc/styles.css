@@ -130,9 +130,18 @@ h2.titulo span{
     
 } 
  
+#btn-contato{
+    text-shadow: 
+     -1px -1px 5px black, 
+     -1px 1px 5px black,                    
+      1px -1px 5px black,                  
+      1px 0px 5px black,
+      0px 0px 6px #f7f8fa;
+}
 button:hover, form .btn-enviar input:hover{ 
     box-shadow: 0px 0px 8px #446EAC; 
     transform: scale(1.06); 
+    
 } 
  
 /*Estilo do cabeçalho*/ 
@@ -151,12 +160,22 @@ header ul li:not(:last-child){
     /*background-color: rgba(92, 92, 92, 0.473);*/
     background-color: #0765f39f;
     border-radius: 50px;
+    transition: 1s;
+    text-shadow: 
+     -1px -1px 5px black, 
+     -1px 1px 5px black,                    
+      1px -1px 5px black,                  
+      1px 0px 5px black,
+      0px 0px 6px #f7f8fa;
+}
+header ul li:not(:last-child):hover{
+    background-color: blue;
 }
 
 
 header a{ 
     /*color: #5c5c5c;*/
-    color: #1b1b1b;
+    color: white;
     text-decoration: none; 
     display: inline-block; 
     transition: .2s; 
