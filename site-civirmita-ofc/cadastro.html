@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civirmita Jr. | Cadastro </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="novoico.ico" type="image/x-icon">
+    
+</head>
+
+<body>
+
+    <cap>
+        <div class="cap-flex">
+            <ul>
+                <h2><span id="Data">00:00:00</span></h2>
+            </ul>
+            <ul>
+                <h2><span id="clock">00:00:00</span></h2>
+            </ul>
+        </div>
+    </cap>
+
+    <header> 
+        <div class="interface"> 
+            <div class="logo"> 
+                <a href="#"> 
+                    <img src="logo.png" alt="logo da empresa"> 
+                </a> 
+            </div> <!--Logo--> 
+            <nav class="menu-desktop"> 
+                <ul> 
+                    <li> 
+                        <a href="index.html">Inicio</a> 
+                    </li> 
+                    <li> 
+                        <a href="sobre.html">Sobre</a> 
+                    </li> 
+                    <li> 
+                        <a href="#">Projetos</a> 
+                    </li>
+                    <li>
+                        <div id="bnt-contato" class="btn-contato"> 
+                            <a href="#"> 
+                                <button>contato</button> <!--Botão de contato--> 
+                            </a> 
+                        </div> <!--btn-contato--> 
+                    </li>
+                </ul> 
+            </nav> 
+        </div> <!--Interface--> 
+    </header>
+
+
+    <div class="titulo">
+        <h1>
+            CADASTRO <span>CIVIRMITA</span>
+        </h1>
+    </div>
+    <div class="content-form">
+        <div class="form-box">
+            <form action="https://sheetdb.io/api/v1/qdd9eaoghswnh" method="post">
+                <div>
+                    <h2>Formulário Para Novos Membros</h2>
+                </div>
+
+                <div class="df">
+                    <h3>Dados Pessoais</h3>
+                    <div><div></div></div>
+                    <ul>
+                        <ul>
+                            <h4>Nome Completo</h4>
+                            <input type="text" name="text[Nome]" placeholder="Informe seu nome" required>
+
+                        </ul>
+                        <ul>
+                            <h4>Data de Nascimento</h4>
+                            <input type="date" value="data" name="text[Nascimento]" placeholder="Data de Nascimento" required>
+                        </ul>
+                        <ul>
+                            <h4>CPF</h4>
+                            <input name="text[Cpf]" type="number-format" placeholder="000000000-00" pattern="\d{9}-\d{2}" required >
+                        </ul>
+                        <ul>
+                            <h4>Estado Civil</h4>
+                            <select name="text[EstadoCivil]">
+                                <option value="">selecione</option>
+                                <option value="Solteiro(a)">Solteiro(a)</option>
+                                <option value="Casado(a)">Casado(a)</option>
+                                <option value="Divorciado(a)">Divorciado(a)</option>
+                                <option value="União-Estavel">União Estavel</option>
+
+                            </select>
+                        </ul>
+                        <ul>
+                            <h4>Sexo</h4>
+                            <select name="text[Sexo]" value="Sexo">
+                                <option value="">selecione</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Transsexual">transsexual</option>
+                                <option value="Assexual">Assesxual</option>
+                                <option value="Não-me-identifico">Não mim identifico</option>
+
+                            </select>
+                        </ul>
+                    
+                    </ul>
+                    <h3>Dados Acadêmicos:</h3>
+                    <div><div></div></div>
+                    <ul>
+                        <ul>
+                            <h4>Matricula</h4>
+                            <input name="text[Matricula]" type="number" placeholder="00000000000" required>
+                        </ul>
+                        <ul>
+                            <h4>Turma</h4>
+                            <input name="text[Turma]" type="text" placeholder="Ano/semestre" pattern="\d{4}/\d{1}" required>
+                        </ul>
+                        <ul>
+                            <h4>Periódo</h4>
+                            <input name="text[Periodo]" type="number" placeholder="0" required>
+                        </ul>
+                        <ul>
+                            <h4>E-mail Institucional</h4>
+                            <input name="text[Email]" type="email" placeholder="@uemasul.edu.br" required>
+                        </ul>
+                        <ul>
+                            <h4>Em Qual(is) Diretoria(s) Voce Tem Maior Interesse?</h4>
+                            <ul>
+                                 <input type="radio" class="radio" name="text[Diretoria]" value="Presidencia" placeholder="nome">
+                                 <label for=""> Diretoria Da Presidencia</label>
+                            </ul>
+                            <ul>
+                                <input type="radio" class="radio" name="text[Diretoria]"  value="Projetos" placeholder="nome">
+                                 <label for="">Diretoria De Projetos</label>
+                            </ul>
+                            <ul>
+                                <input type="radio" class="radio"name="text[Diretoria]" value="Marketing" placeholder="nome">
+                                 <label for="">Diretoria De Marketing</label>
+                            </ul>
+                            <ul>
+                                <input type="radio" class="radio"name="text[Diretoria]" value="Gestão de pessoas" placeholder="nome">
+                                 <label for="">Diretoria De Gestão</label>
+                            </ul>
+                            <ul>
+                                <input type="radio" class="radio"name="text[Diretoria]" value="Adm Financeiro" placeholder="nome">
+                                 <label for="">Diretoria De Administrativo Financeiro</label>
+                            </ul>
+
+                        </ul>
+
+
+                    </ul>
+                </div>
+                <br>
+                    <input type="submit" value="enviar">
+
+
+        
+        
+            </form>
+        </div>
+    </div>
+    
+    
+
+</body>
