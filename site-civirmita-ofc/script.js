@@ -8,6 +8,23 @@ setInterval(()=>{
 }
 )
 
+
+function diretorias(){
+    location.href="dir_admfinanceiro.html"
+
+    var dir ={
+        presidencia: "",
+        admfin: ""
+    }
+    dir.push({admfin:"peidei"})
+    console.log(dir)
+
+}
+
+
+
+
+
 function orcamento1(){
 
     document.querySelector(".conteudoani0").style.display="none"
@@ -151,6 +168,9 @@ function novoorcamento(){
 }
 function orcamento(){
     location.href="orçamento.html"
+}
+function cadastro(){
+    location.href="cadastro.html"
 }
 
 
