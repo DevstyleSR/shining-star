@@ -17,12 +17,25 @@
      1px 1px 20px #446EAC;;
 }
 .content-form{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     color: aliceblue;
     
 }
+.mensagem-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+.mensagem{
+    color: rgb(230, 12, 45);
+}
+.mensagem p{
+    margin: 4%;
+}
+
 .form-box{
     width: 50%;
     height: 100%;

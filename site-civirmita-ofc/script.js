@@ -5,6 +5,8 @@ setInterval(()=>{
     const today = new Date(dataatual);
     document.getElementById("Data").textContent=today.toLocaleDateString();
     document.getElementById("ano").textContent=today.getFullYear();
+
+   
 }
 )
 
@@ -172,6 +174,13 @@ function orcamento(){
 function cadastro(){
     location.href="cadastro.html"
 }
+
+
+
+
+
+
+
 
 
  

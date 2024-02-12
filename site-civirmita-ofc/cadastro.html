@@ -45,7 +45,7 @@
                     </li>
                     <li>
                         <div id="bnt-contato" class="btn-contato"> 
-                            <a href="#"> 
+                            <a href="https://wa.me/+559991528907"> 
                                 <button>contato</button> <!--Botão de contato--> 
                             </a> 
                         </div> <!--btn-contato--> 
@@ -166,6 +166,20 @@
             </form>
         </div>
     </div>
+    <div class="mensagem-box">
+        <div class="mensagem">
+            <h4>
+                Ops, formulário indisponivel no momento, aguarde o período de inscrições.
+                   <br> 
+                <p>
+                    Em caso de duvidas ente em contato.
+                            Atenciosamente, Civirmita Jr.
+                    </p> 
+
+
+            </h4>
+        </div>
+    </div>
     
     
     <footer> 
@@ -186,3 +200,20 @@ href="mailto:presidente.civirmita@uemasul.edu.br">presidente.civirmita@uemasul.e
     </footer> <!--Rodape--> 
 </body>
 </html>
+<script>
+    
+    setInterval(()=>{
+        const formulario = document.querySelector(".content-form")
+        var data = new Date().toLocaleDateString("br")
+        var hours = new Date().getHours()
+        var minuts = new Date().getMinutes()
+        var dia = new Date().getDate()
+        var mes = new Date().getMonth()
+        var ano = new Date().getFullYear()
+        if(dia >= 10 && dia <=11 && mes+1 == 2){
+            formulario.style.display="flex"
+            
+        }
+
+    })
+</script>

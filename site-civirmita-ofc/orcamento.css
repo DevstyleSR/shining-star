@@ -5,6 +5,9 @@ body{
     margin-top: -4%;
     margin-bottom: 1%;
 }
+.text-inicial{
+    margin-top: 90px;
+}
 .calculadora_box,.tipo_de_projeto{
     display: flex;
     width: 100%;
@@ -42,7 +45,7 @@ body{
     justify-content: center;
     align-items: center;
     border: 2px solid #446EAC;
-    border-radius: 100px;
+    border-radius: 900px;
     
 }
 .radio:before,.radio2:before{
@@ -235,7 +238,69 @@ li::marker{
     width: 150px;
 
 }
-@media(max-width:1020px) {
+@media (max-width:1020px) {
+    .titulo{
+        text-align: center;
+        margin-top: -10%;
+        margin-bottom: 4%;
+    }
+    .calculadora_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: start ;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        
+        
+        
+    }
+    .calculadora_box ul {
+        display: flex;
+        padding: .5%;
+
+        
+        
+        
+        
+    }
+    .orcamento_box{
+        height: 600px;
+        padding-top: 2%;
+        padding-right: 4%;
+        
+        
+    }
+    .area{
+        width: 270px;
+    }
+    #button{
+        margin-left: 0;
+    }
+    .conteudoani2{
+        font-size: 15px;
+        padding: 4%;
+        
+
+    }
+    .content_seuorcamento{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    .seuorcamento_button{
+        margin-top: 16%;
+    }
+    .box_img{
+        background-image: url(civirmita.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center top 50px;
+        position: relative;
+    }
+}
+@media(max-width:768px) {
     .titulo{
         text-align: center;
         margin-top: -10%;

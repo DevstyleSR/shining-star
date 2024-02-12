@@ -17,20 +17,6 @@ header{
     height: 300px;
     
 }
-header .logo{
-    animation: logani 1.5s ease;
-}
-@keyframes logani{
-    from{
-        left: -100%;
-        rotate: 0deg;
-        
-        
-    }to{
-        left: 0%;
-        rotate: 360deg;
-    }
-}
 @media (min-width:1020px) {
     header ul li{
         transform: translateY(-30px);
@@ -38,10 +24,6 @@ header .logo{
     }
     header .logo{
         transform: translate(10%,20%);
-        
-    }
-    body{
-        overflow-x: hidden;
     }
 }
 @media (max-width:1020px) {
@@ -69,7 +51,6 @@ header .logo{
     background-color: #010305;
     overflow: hidden;
     padding: 10px;
-    position: relative;
     
     
     
@@ -78,7 +59,7 @@ header .logo{
 body{
     width: 100%;
     height: 100%;
-    background-color: #010305;
+    background-color: #0b081c;
     height: 100vh; /*Altura*/
     user-select: none;
 }
@@ -471,12 +452,8 @@ footer .line {
  
 .borda{ 
     border-top: 5px solid #446EAC; 
-}
+} 
  
-footer p{
-    display: flex;
-    align-items: center;
-}
 footer .line p i{ 
     color: #446EAC; 
     font-size: 24px; 
